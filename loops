@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+read -p "Enter your name: " name
+age=26
+
+echo "Hello $name"
+echo "Are you $age years old"
+
+fruits=("apple" "banana" 'orange')
+echo ${fruits[0]}
+echo ${fruits[1]}
+echo ${fruits[2]}
+
+for fruit in "${fruits[@]}"; 
+do
+  echo $fruit
+done
+
+# adding element to  array
+fruits+=("mangoe")
+#get length
+echo ${#fruits[@]}
+  
